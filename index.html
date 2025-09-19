@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los sin chamba de hola mundo</title>
+    <!-- Incluye Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header y Navegación -->
+    <header class="bg-white shadow-sm">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-800">
+                Los sin chamba de hola mundo
+            </a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#about" class="text-gray-600 hover:text-blue-600 transition duration-300">Acerca de nosotros</a>
+                <a href="#services" class="text-gray-600 hover:text-blue-600 transition duration-300">Servicios</a>
+                <a href="#portfolio" class="text-gray-600 hover:text-blue-600 transition duration-300">Portafolio</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-600 transition duration-300">Contacto</a>
+            </div>
+            <!-- Botón de menú para móviles -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Menú de móviles -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg py-2">
+            <a href="#about" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Acerca de nosotros</a>
+            <a href="#services" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Servicios</a>
+            <a href="#portfolio" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Portafolio</a>
+            <a href="#contact" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Contacto</a>
+        </div>
+    </header>
+
+    <!-- Sección principal (Hero) -->
+    <main>
+        <section class="bg-gray-100 py-20 px-4 md:px-0">
+            <div class="container mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl font-extrabold text-gray-800 leading-tight mb-4">
+                    Soluciones creativas, resultados profesionales
+                </h1>
+                <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-8">
+                    Somos un equipo de desarrolladores y diseñadores dedicados a convertir tus ideas en realidades digitales.
+                </p>
+                <a href="#contact" class="bg-blue-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-blue-700 transition duration-300">
+                    Contáctanos
+                </a>
+            </div>
+        </section>
+
+        <!-- Sección Acerca de nosotros -->
+        <section id="about" class="py-16 bg-white px-4 md:px-0">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Acerca de nosotros</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">
+                    A pesar de nuestro nombre, somos un grupo de profesionales apasionados por el desarrollo web y el diseño.
+                    Creemos en el trabajo duro, la innovación y la colaboración para entregar productos de alta calidad
+                    que superen las expectativas de nuestros clientes. Nuestra misión es ayudarte a construir una presencia
+                    digital sólida y atractiva.
+                </p>
+            </div>
+        </section>
+
+        <!-- Sección de servicios -->
+        <section id="services" class="py-16 bg-gray-100 px-4 md:px-0">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold text-gray-800 text-center mb-10">Nuestros servicios</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg shadow-md p-8 text-center">
+                        <div class="text-blue-600 text-5xl mb-4">
+                           <!-- Icono de desarrollo web -->
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                           </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Desarrollo Web</h3>
+                        <p class="text-gray-600">Creación de sitios web modernos, responsivos y de alto rendimiento.</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-8 text-center">
+                        <div class="text-blue-600 text-5xl mb-4">
+                           <!-- Icono de diseño UX/UI -->
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                           </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Diseño UX/UI</h3>
+                        <p class="text-gray-600">Interfaces de usuario intuitivas y experiencias de usuario excepcionales.</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-8 text-center">
+                        <div class="text-blue-600 text-5xl mb-4">
+                           <!-- Icono de consultoría -->
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-1.282-8.455-3.518m-4.515-4.515A23.931 23.931 0 0112 9a23.931 23.931 0 018.97 1.957M12 3v18" />
+                           </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Consultoría</h3>
+                        <p class="text-gray-600">Asesoría experta para optimizar tu estrategia digital.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de portafolio -->
+        <section id="portfolio" class="py-16 bg-white px-4 md:px-0">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold text-gray-800 text-center mb-10">Nuestro portafolio</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Proyecto 1 -->
+                    <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden">
+                        <img src="https://placehold.co/600x400/1e40af/ffffff?text=Proyecto+Web" alt="Imagen de Proyecto Web" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Proyecto Web 1</h3>
+                            <p class="text-gray-600 text-sm">Desarrollo de un sitio e-commerce completo.</p>
+                        </div>
+                    </div>
+                    <!-- Proyecto 2 -->
+                    <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden">
+                        <img src="https://placehold.co/600x400/1e40af/ffffff?text=Aplicación+Móvil" alt="Imagen de Aplicación Móvil" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Aplicación Móvil</h3>
+                            <p class="text-gray-600 text-sm">Diseño y desarrollo de una app de gestión de tareas.</p>
+                        </div>
+                    </div>
+                    <!-- Proyecto 3 -->
+                    <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden">
+                        <img src="https://placehold.co/600x400/1e40af/ffffff?text=Landing+Page" alt="Imagen de Landing Page" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Landing Page</h3>
+                            <p class="text-gray-600 text-sm">Creación de una página de aterrizaje para un servicio digital.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de contacto -->
+        <section id="contact" class="py-16 bg-gray-100 px-4 md:px-0">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Contáctanos</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto mb-8">
+                    Estamos listos para escucharte y ayudarte a llevar tu proyecto al siguiente nivel.
+                </p>
+                <form action="#" method="POST" class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow-md">
+                    <div class="mb-4">
+                        <input type="text" id="name" name="name" placeholder="Tu nombre" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+                    </div>
+                    <div class="mb-4">
+                        <input type="email" id="email" name="email" placeholder="Tu correo electrónico" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+                    </div>
+                    <div class="mb-4">
+                        <textarea id="message" name="message" rows="4" placeholder="Tu mensaje" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600" required></textarea>
+                    </div>
+                    <button type="submit" class="bg-blue-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-blue-700 transition duration-300">
+                        Enviar mensaje
+                    </button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 px-4 md:px-0">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Los sin chamba de hola mundo. Todos los derechos reservados.</p>
+            <div class="mt-4 flex justify-center space-x-4">
+                <a href="#" class="text-gray-300 hover:text-white transition duration-300">Facebook</a>
+                <a href="#" class="text-gray-300 hover:text-white transition duration-300">Twitter</a>
+                <a href="#" class="text-gray-300 hover:text-white transition duration-300">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Lógica para el menú de móviles
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
